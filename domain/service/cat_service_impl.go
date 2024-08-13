@@ -13,7 +13,6 @@ type CatServiceImpl struct {
 
 func (c CatServiceImpl) GetCats() ([]dto.CatDto, dto.Response) {
 	var response dto.Response
-	//var foodsDto []dto.FoodDto
 
 	cats, err := c.catRepository.GetCats()
 
